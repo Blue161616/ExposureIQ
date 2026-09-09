@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BLUE16 · CTEM Suite</title>
+<title>BLUE16 · Security Assessment Suite</title>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
@@ -380,7 +380,7 @@
     </div>
 
     <footer>
-      <span>BLUE16 · blue16.nl — CTEM Suite</span>
+      <span>BLUE16 · blue16.nl — security assessment console</span>
       <span>© <span id="yr"></span> Blue16 · for authorised use only</span>
     </footer>
   </div>
@@ -582,7 +582,7 @@
       document.getElementById('map').innerHTML = '';
       map = L.map('map', { zoomControl:true, attributionControl:true, scrollWheelZoom:false })
              .setView([lat, lon], 5);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=cb1_33wx_1_fb2c0a1aa9a5ce58e9fe1aab', {
         maxZoom:19,
         attribution:'© OpenStreetMap · © CARTO'
       }).addTo(map);
